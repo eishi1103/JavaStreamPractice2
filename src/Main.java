@@ -17,7 +17,7 @@ public class Main {
 
         //G8の国々からアジアにある国のみフィルターをかけて抽出
         List<String> expelled = G8.stream()
-                .filter(x -> x.contains("Russia"))
+                .filter(country -> country.equals("Russia"))
                 .toList();
 
         System.out.println(expelled + "はG8から追放されました。");
